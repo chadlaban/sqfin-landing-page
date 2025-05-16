@@ -47,6 +47,11 @@
         <p>Take the next step and reserve your spot today</p>
       </div>
       <div class="grid-item-2 small">
+        <!-- Note: responsiveness breaks due to element position and width -->
+        <!-- TO DO: -->
+        <!-- 1. try different grid format -->
+        <!-- 2. refine width changes by every 300-400 pixels (if no workaround found) -->
+
         <!-- <img :src="image2" alt="phone-image" />
         <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 36px" /> -->
       </div>
