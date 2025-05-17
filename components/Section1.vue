@@ -1,5 +1,5 @@
 <template>
-  <section class="featured-section">
+  <section class="flex-section-1">
     <div class="content">
       <img :src="Logo" alt="SqFin Logo" class="logo" />
       <article>
@@ -21,7 +21,11 @@
     </div>
 
     <div class="background">
-      <img :src="BackgroundImage" alt="Background Image" />
+      <!-- having issues with multiple linear-gradients through SASS, -->
+      <!-- did an image stack instead of individual linear-gradients -->
+      <img :src="bgImage" alt="background-image" class="base-image" />
+      <img :src="overlayImage1" alt="overlay-image" class="overlay-image-1" />
+      <img :src="overlayImage2" alt="overlay-image" class="overlay-image-2" />
       <div class="bottom-text-section">
         <p class="upper-text">
           <span>Join the Best Traders and Investors.</span><br />
@@ -50,7 +54,9 @@
 <script setup>
 import Logo from "@/assets/images/logos/squaredfinancial_logo_light.png";
 import zoomIcon from "@/assets/images/media-icons/zoom-icon.png";
-import BackgroundImage from "@/assets/images/background/featured-bg.png";
+import bgImage from "@/assets/images/background/featured-bg.png";
+import overlayImage1 from "@/assets/images/background/radiant-overlay-bg.png";
+import overlayImage2 from "@/assets/images/background/dark-overlay-bg.png";
 import CtaButton from "@/components/ui/CtaButton.vue";
 </script>
 
@@ -59,7 +65,7 @@ import CtaButton from "@/components/ui/CtaButton.vue";
 @use "~/assets/styles/typography" as typography
 @use "sass:color"
 
-.featured-section
+.flex-section-1
   display: flex
   flex-direction: column
   color: variables.$color-white
@@ -198,13 +204,15 @@ import CtaButton from "@/components/ui/CtaButton.vue";
       @media (min-width: 768px)
         background: linear-gradient(90deg,variables.$color-black 5%, rgba(255, 255, 255, 0) 16%)
 
-    img
-      width: 100%
-      height: 100%
-      object-fit: cover
+    .base-image,
+    .overlay-image-1,
+    .overlay-image-2
       position: absolute
       top: 0
       left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
       z-index: 0
 
     .bottom-text-section
