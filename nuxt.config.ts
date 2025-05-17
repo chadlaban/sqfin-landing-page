@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxt/image-edge"],
   image: {
-    dir: "assets/images",
     domains: [],
     vercel: {
       basePath: "/_next/image",
