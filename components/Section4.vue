@@ -48,6 +48,7 @@ import "@/assets/images/sections/section4.png";
   background-position: center, right center, right center
   background-size: cover, auto, auto
   background-repeat: no-repeat, no-repeat, no-repeat
+  margin-bottom: 0
 
 .grid-container-4
   display: grid
