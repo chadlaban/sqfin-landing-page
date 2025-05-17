@@ -1,17 +1,19 @@
 <!-- Section 6 includes sections 7 and 8 based from Figma design -->
-
 <template>
   <section class="flex-section-6">
     <div class="about-sqfin-container">
       <section>
         <div>
           <h1>About</h1>
-          <img :src="sqFinLogo" alt="squared-financial-logo-dark" />
+          <NuxtImg
+            src="/logos/squaredfinancial-logo-dark-lg.png"
+            alt="squared-financial-logo-dark"
+          />
         </div>
         <div>
           <p>More than just a broker – A thriving community & learning hub</p>
           <h1>We help our traders thrive.</h1>
-          <img :src="tradingImg" alt="about-trading" />
+          <NuxtImg src="/sections/section6.png" alt="about-trading" />
           <CtaButton bgColor="#C30044" textColor="#FFFFFF" padding="20px 50px">
             Open Trading Account
           </CtaButton>
@@ -21,13 +23,34 @@
     <div class="media-coverage-container">
       <h1>Expertise and coverage by global media</h1>
       <div class="media-logos">
-        <img :src="mediaLogo1" alt="media-coverage-logo-1" />
-        <img :src="mediaLogo2" alt="media-coverage-logo-2" />
-        <img :src="mediaLogo3" alt="media-coverage-logo-3" />
-        <img :src="mediaLogo4" alt="media-coverage-logo-4" />
-        <img :src="mediaLogo5" alt="media-coverage-logo-5" />
-        <img :src="mediaLogo6" alt="media-coverage-logo-6" />
-        <img :src="mediaLogo7" alt="media-coverage-logo-7" />
+        <NuxtImg
+          src="/sections/media_coverage/Group_49.png"
+          alt="media-coverage-logo-1"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_50.png"
+          alt="media-coverage-logo-2"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_51.png"
+          alt="media-coverage-logo-3"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_52.png"
+          alt="media-coverage-logo-4"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_53.png"
+          alt="media-coverage-logo-5"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_54.png"
+          alt="media-coverage-logo-6"
+        />
+        <NuxtImg
+          src="/sections/media_coverage/Group_55.png"
+          alt="media-coverage-logo-7"
+        />
       </div>
     </div>
   </section>
@@ -35,15 +58,6 @@
 
 <script setup>
 import CtaButton from "@/components/ui/CtaButton.vue";
-import tradingImg from "@/assets/images/sections/section6.png";
-import sqFinLogo from "@/assets/images/logos/squaredfinancial-logo-dark-lg.png";
-import mediaLogo1 from "@/assets/images/sections/media_coverage/Group_49.png";
-import mediaLogo2 from "@/assets/images/sections/media_coverage/Group_50.png";
-import mediaLogo3 from "@/assets/images/sections/media_coverage/Group_51.png";
-import mediaLogo4 from "@/assets/images/sections/media_coverage/Group_52.png";
-import mediaLogo5 from "@/assets/images/sections/media_coverage/Group_53.png";
-import mediaLogo6 from "@/assets/images/sections/media_coverage/Group_54.png";
-import mediaLogo7 from "@/assets/images/sections/media_coverage/Group_55.png";
 </script>
 
 <style scoped lang="sass">

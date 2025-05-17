@@ -33,8 +33,6 @@
 
 <script setup>
 import CtaButton from "@/components/ui/CtaButton.vue";
-import "@/assets/images/background/bd-section4.png";
-import "@/assets/images/sections/section4.png";
 </script>
 
 <style scoped lang="sass">
@@ -44,7 +42,7 @@ import "@/assets/images/sections/section4.png";
 
 .grid-section-4
   display: flex
-  background-image: url("@/assets/images/background/bd-section4.png"), url("@/assets/images/sections/section4.png")
+  background-image: url("~/assets/images/background/bd-section4.png"), url("~/assets/images/sections/section4.png")
   background-position: center, right center, right center
   background-size: cover, auto, auto
   background-repeat: no-repeat, no-repeat, no-repeat

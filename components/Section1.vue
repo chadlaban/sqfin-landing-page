@@ -1,7 +1,11 @@
 <template>
   <section class="flex-section-1">
     <div class="content">
-      <img :src="Logo" alt="SqFin Logo" class="logo" />
+      <NuxtImg
+        src="/logos/squaredfinancial_logo_light.png"
+        alt="SqFin Logo"
+        class="logo"
+      />
       <article>
         <div class="intro-container">
           <h1 class="title">FOREX MASTERY WEBINAR</h1>
@@ -14,7 +18,7 @@
           <span>Save the date</span>
           <p class="day-month">13 MAY</p>
           <p class="time">8:00 PM</p>
-          <img :src="zoomIcon" alt="Icon" class="icon" />
+          <NuxtImg src="/media-icons/zoom-icon.png" alt="Icon" class="icon" />
         </div>
       </article>
       <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 28px" />
@@ -23,9 +27,21 @@
     <div class="background">
       <!-- having issues with multiple linear-gradients through SASS, -->
       <!-- did an image stack instead of individual linear-gradients -->
-      <img :src="bgImage" alt="background-image" class="base-image" />
-      <img :src="overlayImage1" alt="overlay-image" class="overlay-image-1" />
-      <img :src="overlayImage2" alt="overlay-image" class="overlay-image-2" />
+      <NuxtImg
+        src="/background/featured-bg.png"
+        alt="background-image"
+        class="base-image"
+      />
+      <NuxtImg
+        src="/background/radiant-overlay-bg.png"
+        alt="overlay-image"
+        class="overlay-image-1"
+      />
+      <NuxtImg
+        src="/background/dark-overlay-bg.png"
+        alt="overlay-image"
+        class="overlay-image-2"
+      />
       <div class="bottom-text-section">
         <p class="upper-text">
           <span>Join the Best Traders and Investors.</span><br />
@@ -52,11 +68,6 @@
 </template>
 
 <script setup>
-import Logo from "@/assets/images/logos/squaredfinancial_logo_light.png";
-import zoomIcon from "@/assets/images/media-icons/zoom-icon.png";
-import bgImage from "@/assets/images/background/featured-bg.png";
-import overlayImage1 from "@/assets/images/background/radiant-overlay-bg.png";
-import overlayImage2 from "@/assets/images/background/dark-overlay-bg.png";
 import CtaButton from "@/components/ui/CtaButton.vue";
 </script>
 
