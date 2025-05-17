@@ -3,10 +3,10 @@
   <Section2 />
   <Section3 />
   <Section4 />
-  <!-- <Section5 />
-  <Section6 />
-  <Section7 />
-  <Section8 /> -->
+  <div class="combined-section">
+    <Section5 />
+    <Section6 />
+  </div>
   <Section9 />
 </template>
 
@@ -32,3 +32,10 @@ useHead({
   link: [{ rel: "canonical", href: "" }],
 });
 </script>
+
+<style scoped lang="sass">
+@use "~/assets/styles/variables"
+
+.combined-section
+  background-color: variables.$color-alt-light-gray
+</style>
