@@ -10,11 +10,31 @@
       </CtaButton>
     </div>
     <div class="lower-content">
-      <img :src="award1" alt="pan-finance-award-1" class="award-img" />
-      <img :src="award2" alt="pan-finance-award-2" class="award-img" />
-      <img :src="award3" alt="pan-finance-award-3" class="award-img" />
-      <img :src="award4" alt="pan-finance-award-4" class="award-img" />
-      <img :src="award5" alt="pan-finance-award-5" class="award-img" />
+      <NuxtImg
+        src="/sections/pan-finance-award-1.png"
+        alt="pan-finance-award-1"
+        class="award-img"
+      />
+      <NuxtImg
+        src="/sections/pan-finance-award-2.png"
+        alt="pan-finance-award-2"
+        class="award-img"
+      />
+      <NuxtImg
+        src="/sections/pan-finance-award-3.png"
+        alt="pan-finance-award-3"
+        class="award-img"
+      />
+      <NuxtImg
+        src="/sections/pan-finance-award-4.png"
+        alt="pan-finance-award-4"
+        class="award-img"
+      />
+      <NuxtImg
+        src="/sections/pan-finance-award-5.png"
+        alt="pan-finance-award-5"
+        class="award-img"
+      />
     </div>
   </section>
   <section class="cta-section">
@@ -27,11 +47,6 @@
 
 <script setup>
 import CtaButton from "@/components/ui/CtaButton.vue";
-import award1 from "@/assets/images/sections/pan-finance-award-1.png";
-import award2 from "@/assets/images/sections/pan-finance-award-2.png";
-import award3 from "@/assets/images/sections/pan-finance-award-3.png";
-import award4 from "@/assets/images/sections/pan-finance-award-4.png";
-import award5 from "@/assets/images/sections/pan-finance-award-5.png";
 </script>
 
 <style scoped lang="sass">

@@ -9,23 +9,17 @@
       </div>
     </div>
     <div class="right-column-5">
-      <img :src="imageReview1" alt="trader-review-1" />
-      <img :src="imageReview2" alt="trader-review-2" />
-      <img :src="imageReview3" alt="trader-review-3" />
-      <img :src="imageReview4" alt="trader-review-4" />
-      <img :src="imageReview5" alt="trader-review-5" />
+      <NuxtImg src="/sections/reviews/Group_18.png" alt="trader-review-1" />
+      <NuxtImg src="/sections/reviews/Group_43.png" alt="trader-review-2" />
+      <NuxtImg src="/sections/reviews/Group_44.png" alt="trader-review-3" />
+      <NuxtImg src="/sections/reviews/Group_45.png" alt="trader-review-4" />
+      <NuxtImg src="/sections/reviews/Group_46.png" alt="trader-review-5" />
     </div>
   </section>
 </template>
 
 <script setup>
 import CtaButton from "@/components/ui/CtaButton.vue";
-import "@/assets/images/background/vector-bg.png";
-import imageReview1 from "@/assets/images/sections/reviews/Group_18.png";
-import imageReview2 from "@/assets/images/sections/reviews/Group_43.png";
-import imageReview3 from "@/assets/images/sections/reviews/Group_44.png";
-import imageReview4 from "@/assets/images/sections/reviews/Group_45.png";
-import imageReview5 from "@/assets/images/sections/reviews/Group_46.png";
 </script>
 
 <style scoped lang="sass">
@@ -39,7 +33,7 @@ import imageReview5 from "@/assets/images/sections/reviews/Group_46.png";
   align-items: center
   justify-content: center
   gap: 1rem
-  background-image: url("@/assets/images/background/vector-bg.png")
+  background-image: url("~/assets/images/background/vector-bg.png")
   background-size: cover
   background-position: center
   background-repeat: no-repeat

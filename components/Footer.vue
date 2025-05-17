@@ -3,7 +3,10 @@
     <div class="footer-top">
       <div class="footer-logo">
         <a href="/" class="logo" aria-label="Company Logo">
-          <img :src="Logo" alt="SquaredFinancial Logo" />
+          <NuxtImg
+            src="/logos/squaredfinancial_logo_dark.png"
+            alt="SquaredFinancial Logo"
+          />
         </a>
         <span>© SquaredFinancial 2025. All rights reserved.</span>
       </div>
@@ -13,30 +16,50 @@
         <ul>
           <li>
             <a href="#" aria-label="Facebook"
-              ><img :src="mIcon1" alt="facebook-icon"
+              ><NuxtImg
+                src="/media-icons/fb-icon.png"
+                alt="facebook-icon"
+                class="media-icon"
             /></a>
           </li>
           <li>
-            <a href="#" aria-label="X"><img :src="mIcon2" alt="x-icon" /></a>
+            <a href="#" aria-label="X"
+              ><NuxtImg
+                src="/media-icons/x-icon.png"
+                alt="x-icon"
+                class="media-icon"
+            /></a>
           </li>
           <li>
             <a href="#" aria-label="LinkedIn"
-              ><img :src="mIcon3" alt="linkedin-icon"
+              ><NuxtImg
+                src="/media-icons/linkedin-icon.png"
+                alt="linkedin-icon"
+                class="media-icon"
             /></a>
           </li>
           <li>
             <a href="#" aria-label="Instagram"
-              ><img :src="mIcon4" alt="instagram-icon"
+              ><NuxtImg
+                src="/media-icons/insta-icon.png"
+                alt="instagram-icon"
+                class="media-icon"
             /></a>
           </li>
           <li>
             <a href="#" aria-label="Telegram"
-              ><img :src="mIcon5" alt="telegram-icon"
+              ><NuxtImg
+                src="/media-icons/tg-icon.png"
+                alt="telegram-icon"
+                class="media-icon"
             /></a>
           </li>
           <li>
             <a href="#" aria-label="Youtube"
-              ><img :src="mIcon6" alt="youtube-icon"
+              ><NuxtImg
+                src="/media-icons/youtube-icon.png"
+                alt="youtube-icon"
+                class="media-icon"
             /></a>
           </li>
         </ul>
@@ -85,16 +108,6 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-import Logo from "@/assets/images/logos/squaredfinancial_logo_dark.png";
-import mIcon1 from "@/assets/images/media-icons/fb-icon.png";
-import mIcon2 from "@/assets/images/media-icons/x-icon.png";
-import mIcon3 from "@/assets/images/media-icons/linkedin-icon.png";
-import mIcon4 from "@/assets/images/media-icons/insta-icon.png";
-import mIcon5 from "@/assets/images/media-icons/tg-icon.png";
-import mIcon6 from "@/assets/images/media-icons/youtube-icon.png";
-</script>
 
 <style scoped lang="sass">
 @use "@/assets/styles/variables"

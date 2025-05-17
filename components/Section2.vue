@@ -12,24 +12,40 @@
           >, uncovers new roads you can take to advance your trading skills.
           Join our trading webinar and unlock countless opportunities.
         </p>
-        <img :src="image1" alt="shutterstock-image" class="bg-img" />
+        <NuxtImg
+          src="/background/shutterstock_section2.png"
+          alt="shutterstock-image"
+          class="bg-img"
+        />
       </div>
       <!-- mid row -->
       <div class="grid-item-2 small item-facts">
-        <img :src="icon1" alt="magnifying-glass-img" class="grid-item-2-icon" />
+        <NuxtImg
+          src="/section-icons/box3.png"
+          alt="magnifying-glass-img"
+          class="grid-item-2-icon"
+        />
         <p>
           He goes beyond regular analysis and uncovers deep insights that others
           miss
         </p>
       </div>
       <div class="grid-item-2 small item-facts">
-        <img :src="icon2" alt="stocks-img" class="grid-item-2-icon" />
+        <NuxtImg
+          src="/section-icons/box4.png"
+          alt="stocks-img"
+          class="grid-item-2-icon"
+        />
         <p>
           He breaks down complex economic trends and gives actionable strategies
         </p>
       </div>
       <div class="grid-item-2 small item-facts">
-        <img :src="icon3" alt="star-img" class="grid-item-2-icon" />
+        <NuxtImg
+          src="/section-icons/box5.png"
+          alt="star-img"
+          class="grid-item-2-icon"
+        />
         <p>
           He is a trusted voice in the region and provides an in-depth outlook
           on top financial media
@@ -37,7 +53,11 @@
       </div>
       <!-- bottom row -->
       <div class="grid-item-2 small item-facts">
-        <img :src="icon4" alt="arrow-img" class="grid-item-2-icon" />
+        <NuxtImg
+          src="/section-icons/box6.png"
+          alt="arrow-img"
+          class="grid-item-2-icon"
+        />
         <p>
           He is focused on customized performance and results and empowers
           traders with efficient techniques
@@ -47,7 +67,7 @@
         <p>Take the next step and reserve your spot today</p>
       </div>
       <div class="grid-item-2 small">
-        <img :src="image2" alt="phone-image" />
+        <NuxtImg src="/background/phone_section2.png" alt="phone-image" />
         <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 36px" />
       </div>
     </div>
@@ -55,12 +75,6 @@
 </template>
 
 <script setup>
-import image1 from "@/assets/images/background/shutterstock_section2.png";
-import image2 from "@/assets/images/background/phone_section2.png";
-import icon1 from "@/assets/images/section-icons/box3.png";
-import icon2 from "@/assets/images/section-icons/box4.png";
-import icon3 from "@/assets/images/section-icons/box5.png";
-import icon4 from "@/assets/images/section-icons/box6.png";
 import CtaButton from "@/components/ui/CtaButton.vue";
 </script>
 
@@ -90,6 +104,7 @@ import CtaButton from "@/components/ui/CtaButton.vue";
     background: linear-gradient(20deg,variables.$color-american-pink 20%, variables.$color-razzmatazz 70%)
 
   div:last-child
+    overflow: hidden
     background-color: variables.$color-white
 
     img

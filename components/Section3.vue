@@ -2,7 +2,11 @@
   <section class="grid-section-3">
     <div class="grid-container-3">
       <div class="grid-item-3 left-column">
-        <img :src="image" alt="seminar-imgs" class="left-image" />
+        <NuxtImg
+          src="/sections/section3.png"
+          alt="seminar-imgs"
+          class="left-image"
+        />
         <p>
           <span>Temitope Ijibadejo</span><br />
           <span>18-year Forex trading expert</span>
@@ -24,7 +28,7 @@
         </article>
         <div class="forex-award-container">
           <span>Award</span>
-          <img :src="logo" alt="forex-award" />
+          <NuxtImg src="/logos/best-forex-logo.png" alt="forex-award" />
         </div>
         <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 36px" />
       </div>
@@ -33,8 +37,6 @@
 </template>
 
 <script setup>
-import image from "@/assets/images/sections/section3.png";
-import logo from "@/assets/images/logos/best-forex-logo.png";
 import CtaButton from "@/components/ui/CtaButton.vue";
 </script>
 
