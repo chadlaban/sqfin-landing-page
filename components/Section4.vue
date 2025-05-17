@@ -42,7 +42,7 @@ import CtaButton from "@/components/ui/CtaButton.vue";
 
 .grid-section-4
   display: flex
-  background-image: url("~/assets/images/background/bd-section4.png"), url("~/assets/images/sections/section4.png")
+  background-image: url("/background/bd-section4.png"), url("/sections/section4.png")
   background-position: center, right center, right center
   background-size: cover, auto, auto
   background-repeat: no-repeat, no-repeat, no-repeat
