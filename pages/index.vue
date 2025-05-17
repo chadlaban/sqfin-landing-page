@@ -7,7 +7,7 @@
     <Section5 class="fade-section" />
     <Section6 class="fade-section" />
   </div>
-  <Section9 class="fade-section" />
+  <Section9 />
 </template>
 
 <script setup>
