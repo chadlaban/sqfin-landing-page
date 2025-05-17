@@ -2,6 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+  modules: ["@nuxt/image-edge"],
+  image: {
+    dir: "assets/images",
+    domains: [],
+    vercel: {
+      basePath: "/_next/image",
+      quality: 75,
+      formats: ["image/avif", "image/webp"],
+    },
+  },
   app: {
     head: {
       // fonts are referenced from https://fonts.google.com/selection/embed
