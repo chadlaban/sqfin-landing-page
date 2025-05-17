@@ -16,6 +16,8 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "sass": "^1.88.0"
+    "@types/node": "^22.15.18",
+    "sass": "^1.88.0",
+    "typescript": "^5.8.3"
   }
 }
