@@ -47,13 +47,8 @@
         <p>Take the next step and reserve your spot today</p>
       </div>
       <div class="grid-item-2 small">
-        <!-- Note: responsiveness breaks due to element position and width -->
-        <!-- TO DO: -->
-        <!-- 1. try different grid format -->
-        <!-- 2. refine width changes by every 300-400 pixels (if no workaround found) -->
-
-        <!-- <img :src="image2" alt="phone-image" />
-        <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 36px" /> -->
+        <img :src="image2" alt="phone-image" />
+        <CtaButton bgColor="#1DA584" textColor="#FFFFFF" padding="20px 36px" />
       </div>
     </div>
   </section>
@@ -98,48 +93,47 @@ import CtaButton from "@/components/ui/CtaButton.vue";
     background-color: variables.$color-white
 
     img
-      position: relative
+      position: absolute
+      right: 0
 
       @media (max-width: 767px)
-        left: 16px
-        width: 100%
-        max-width: 810px
+        width: 550px
 
       @media (min-width: 768px)
-        top: 64px
-        left: 32px
-        width: 110%
-        max-width: 410px
+        width: 444px
 
       @media (min-width: 1024px)
-        top: 0
-        left: 128px
-        width: 810px
-        max-width: 810px
-        height: 430px
+        width: 480px
+
+      @media (min-width: 1420px)
+        width: 640px
 
     .cta-button
       position: relative
+      padding: 8px 16px !important
+      height: 60px
 
       @media (max-width: 767px)
-        bottom: 160px
-        left: 110px
+        left: 224px
+        top: 188px
 
       @media (min-width: 768px)
-        bottom: 65px
-        left: 90px
-        padding: 0px 16px !important
-        height: 65px
+        left: 114px
+        top: 148px
 
       @media (min-width: 1024px)
-        bottom: 180px
-        left: 244px
+        left: 0px
+        top: 180px
+
+      @media (min-width: 1420px)
+        left: 115px
+        top: 244px
 
       &:hover
         background-color: color.adjust(variables.$color-ocean-green, $lightness: -10%) !important
 
   @media (max-width: 767px)
-    padding: 1rem 0
+    padding: 0 0 0 1rem
     display: flex
     flex-direction: column
 
