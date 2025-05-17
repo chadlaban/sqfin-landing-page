@@ -33,7 +33,7 @@ import CtaButton from "@/components/ui/CtaButton.vue";
   align-items: center
   justify-content: center
   gap: 1rem
-  background-image: url("~/assets/images/background/vector-bg.png")
+  background-image: url("/background/vector-bg.png")
   background-size: cover
   background-position: center
   background-repeat: no-repeat
