@@ -18,6 +18,8 @@ Start the development server:
 npm run dev
 ```
 
+After executing the command and allowing processes to complete, you may access the landing page locally through your localhost:[port] on the browser.
+
 ## Production
 
 Build the application for production:
